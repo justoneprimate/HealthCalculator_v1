@@ -1,8 +1,8 @@
 import calculator
 
 # Get User's Information
-print("Welcome to myHealth the all in one health calculator."
-      "Enter your personal details to get started!")
+print("Welcome to myHealth the all in one health calculator.\n"
+      "Enter your personal details to get started!\n")
 
 first_name = input("What is your first name?  ")
 
@@ -25,39 +25,19 @@ weight = int(input("How much do you weigh(lbs.)?  "))
 
 goal_weight = int(input("Enter your goal weight:  "))
 
-print('*' * 50)
-print("Here is a summary of what you entered:")
-print('-' * 50)
-print("Name: " + last_name + ", " + first_name)
-print("Gender: {} ".format(gender_full))
-print("Height: {} in. ".format(height))
-print("Current Weight: {}lbs.".format(weight))
-print("You would like to lose {} lbs.".format(weight - goal_weight))
-print('-' * 50 + '\n')
-print("Based on the information provided:")
-print('-' * 50)
-
-# Return BMI Value to user
-print("Your BMI is {0:1.2f}".format(float(calculator.bmi(weight, height))))
-
-# Return Max Heart Rate to user
-print("Your Maximum Heart Rate is {0} bpm.".format(int(calculator.hr(age))))
-
-# Return optimal fat-burning heart rate
-print("Your Target Heart Rate for maximum fat-burn is {0} bpm.".format(round(calculator.hr_fatburn(age))))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+print(f"*" * 50 + "\n\n"
+      f"Here is a summary of what you entered:\n"
+      f"--------------------------------------\n" 
+      f"Name: {last_name}, {first_name}\n"
+      f"Gender: {gender_full}\n"
+      f"Height: {height} in.\n"
+      f"Current Weight: {weight}lbs.\n\n"
+      f"Goal: You would like to lose {weight - goal_weight} lbs.\n\n\n"
+      f"Based on the information provided:\n"
+      f"--------------------------------------\n"
+      # Return BMI Value to user
+      f"Your BMI is {float(calculator.bmi(weight, height)):.2f}\n"
+      # Return Max Heart Rate to user
+      f"Your Maximum Heart Rate is {int(calculator.hr(age))} bpm.\n"
+      # Return optimal fat-burning heart rate
+      f"Your Target Heart Rate for maximum fat-burn is {round(calculator.hr_fatburn(age))} bpm.\n")
