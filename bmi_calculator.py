@@ -7,6 +7,29 @@ bmi_calc = (weight * bmi_const) / (height ** 2)
 
 print("Your BMI is {0:1.2f}\n".format(float(bmi_calc)))
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Compare user BMI to healthy levels to determine estimated fitness level.
 
 if bmi_calc <= 18.5:
