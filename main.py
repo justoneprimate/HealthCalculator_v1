@@ -1,4 +1,5 @@
 import calculator
+import dictionary
 
 # Get User's Information
 print("Welcome to myHealth the all in one health calculator.\n"
@@ -27,7 +28,7 @@ goal_weight = int(input("Enter your goal weight:  "))
 
 print(f"*" * 50 + "\n\n"
       f"Here is a summary of what you entered:\n"
-      f"--------------------------------------\n" 
+      f"--------------------------------------\n"
       f"Name: {last_name}, {first_name}\n"
       f"Gender: {gender_full}\n"
       f"Height: {height} in.\n"
@@ -41,3 +42,15 @@ print(f"*" * 50 + "\n\n"
       f"Your Maximum Heart Rate is {int(calculator.hr(age))} bpm.\n"
       # Return optimal fat-burning heart rate
       f"Your Target Heart Rate for maximum fat-burn is {round(calculator.hr_fatburn(age))} bpm.\n")
+
+print("----------------------------------------\n")
+user_answer = (input("Would you like to learn more about these values, and what they mean? ").upper())
+while True:
+    if user_answer == 'N':
+        print("Thank you for using myHealth")
+        break
+    else:
+        info = input("What would you like to learn more about? Type the associated number\n"
+                     "of your choice")
+        weight_loss =
+
