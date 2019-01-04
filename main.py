@@ -38,7 +38,13 @@ print("Based on the information provided:")
 print('-' * 50)
 
 # Return BMI Value to user
-print("Your BMI is {0:1.2f}\n".format(float(calculator.bmi(weight, height))))
+print("Your BMI is {0:1.2f}".format(float(calculator.bmi(weight, height))))
+
+# Return Max Heart Rate to user
+print("Your Maximum Heart Rate is {0} bpm.".format(int(calculator.hr(age))))
+
+# Return optimal fat-burning heart rate
+print("Your Target Heart Rate for maximum fat-burn is {0} bpm.".format(round(calculator.hr_fatburn(age))))
 
 
 
